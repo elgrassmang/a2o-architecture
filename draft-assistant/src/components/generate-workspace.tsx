@@ -8,6 +8,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { OutputEditor, type OutputMeta } from "@/components/output-editor";
+import { SaveToLibrary } from "@/components/save-to-library";
 import { OUTPUT_TYPES, OUTPUT_TYPE_SPECS, type OutputType } from "@/lib/output-types";
 import type { ProjectParams } from "@/lib/validation";
 
@@ -33,7 +34,6 @@ const EMPTY_PARAMS: ProjectParams = { projectName: "", scope: "", occupancy: "",
 export function GenerateWorkspace(props: {
   enabledTypes: readonly OutputType[];
   seed?: WorkspaceSeed;
-  renderSaveAction?: (state: { type: OutputType; brief: string; params: ProjectParams; body: string; generationId: string | null }) => React.ReactNode;
 }) {
   const [type, setType] = useState<OutputType>(props.seed?.type ?? props.enabledTypes[0]);
   const [brief, setBrief] = useState(props.seed?.brief ?? "");
@@ -135,7 +135,7 @@ export function GenerateWorkspace(props: {
         value={output}
         onChange={setOutput}
         meta={meta}
-        actions={props.renderSaveAction?.({ type, brief, params, body: output, generationId })}
+        actions={<SaveToLibrary type={type} brief={brief} params={params} body={output} generationId={generationId} />}
       />
     </div>
   );
