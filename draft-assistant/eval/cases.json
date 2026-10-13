@@ -145,5 +145,149 @@
       "lorem",
       "[insert"
     ]
+  },
+  {
+    "id": "gn-03-pool-cabana-county",
+    "type": "GENERAL_NOTES",
+    "brief": "General notes for a new pool, cabana, and site improvements at an existing residence in unincorporated Monroe County. Keep the house occupied during construction; protect native vegetation; retain stormwater on site.",
+    "params": {
+      "projectName": "Sugarloaf Key Residence Pool and Cabana",
+      "scope": "New pool, pool deck, cabana with outdoor shower, and site drainage at existing residence",
+      "occupancy": "R-3",
+      "jurisdiction": "Monroe County",
+      "specifics": "Septic on site; protected native vegetation; cabana roof to match house"
+    },
+    "expectSections": [
+      "SITE"
+    ],
+    "expectPhrases": [
+      "pool",
+      "septic",
+      "vegetation"
+    ],
+    "forbidPhrases": [
+      "lorem",
+      "[insert"
+    ]
+  },
+  {
+    "id": "gn-04-retail-ti",
+    "type": "GENERAL_NOTES",
+    "brief": "General notes for a retail tenant improvement in an existing Duval Street storefront: demolition of existing finishes, new partitions, accessible toilet room, impact-rated storefront glazing.",
+    "params": {
+      "projectName": "Duval Street Retail TI",
+      "scope": "Interior tenant improvement of existing retail bay with new storefront",
+      "occupancy": "M",
+      "jurisdiction": "City of Key West",
+      "specifics": "Landlord coordination; adjacent tenants remain open; fire alarm under separate permit"
+    },
+    "expectSections": [
+      "DEMOLITION",
+      "STOREFRONT"
+    ],
+    "expectPhrases": [
+      "accessib",
+      "Landlord",
+      "separate permit"
+    ],
+    "forbidPhrases": [
+      "lorem",
+      "[insert"
+    ]
+  },
+  {
+    "id": "spec-03-gypsum",
+    "type": "SPEC_SECTION",
+    "brief": "Specification section for gypsum board assemblies in a tenant improvement: standard, moisture-resistant, and cement backer board; finish levels; control joints.",
+    "params": {
+      "projectName": "Duval Street Retail TI",
+      "scope": "Interior tenant improvement",
+      "occupancy": "M",
+      "jurisdiction": "City of Key West",
+      "specifics": "Level 4 finish at painted walls; Level 2 above ceilings"
+    },
+    "expectSections": [
+      "3.03 FINISHING"
+    ],
+    "expectPhrases": [
+      "moisture",
+      "backer board",
+      "Level 4"
+    ],
+    "forbidPhrases": [
+      "lorem",
+      "[insert"
+    ]
+  },
+  {
+    "id": "spec-04-exterior-wood-trim",
+    "type": "SPEC_SECTION",
+    "brief": "Specification section for exterior wood siding and trim on a historic renovation: match existing profiles approved by HARC, back-priming, stainless fasteners, salvaged Dade County pine reuse where indicated.",
+    "params": {
+      "projectName": "614 Eaton Street Renovation",
+      "scope": "Renovation and rear addition to contributing historic structure",
+      "occupancy": "R-3",
+      "jurisdiction": "City of Key West",
+      "specifics": "HARC Certificate of Appropriateness approved; salvage existing siding where indicated"
+    },
+    "expectSections": [
+      "1.03 SUBMITTALS"
+    ],
+    "expectPhrases": [
+      "HARC",
+      "back-prim",
+      "stainless"
+    ],
+    "forbidPhrases": [
+      "lorem",
+      "[insert"
+    ]
+  },
+  {
+    "id": "sched-03-window-historic",
+    "type": "SCHEDULE",
+    "brief": "Window schedule for a historic renovation: two existing front-facade double-hung windows to be repaired in place, four new impact-rated windows at the rear addition matching the approved profile, one obscure awning window at the bath.",
+    "params": {
+      "projectName": "614 Eaton Street Renovation",
+      "scope": "Renovation and rear addition",
+      "occupancy": "R-3",
+      "jurisdiction": "City of Key West",
+      "specifics": "HARC-approved 2-over-2 muntin pattern; new units impact-rated"
+    },
+    "expectSections": [
+      "WINDOW SCHEDULE"
+    ],
+    "expectPhrases": [
+      "W01",
+      "HARC",
+      "impact"
+    ],
+    "forbidPhrases": [
+      "lorem",
+      "[insert"
+    ]
+  },
+  {
+    "id": "sched-04-plumbing-fixture",
+    "type": "SCHEDULE",
+    "brief": "Plumbing fixture schedule for a new elevated residence: two full baths, one powder room, kitchen sink, laundry sink, outdoor shower, and water heater. Owner-selected fixtures to be verified.",
+    "params": {
+      "projectName": "1205 Simonton Street Residence",
+      "scope": "New two-story elevated single-family residence",
+      "occupancy": "R-3",
+      "jurisdiction": "City of Key West",
+      "specifics": "Water heater location to be confirmed; outdoor shower at ground level"
+    },
+    "expectSections": [
+      "PLUMBING FIXTURE SCHEDULE"
+    ],
+    "expectPhrases": [
+      "VERIFY",
+      "outdoor shower"
+    ],
+    "forbidPhrases": [
+      "lorem",
+      "[insert"
+    ]
   }
 ]

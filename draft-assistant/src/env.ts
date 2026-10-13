@@ -1,5 +1,7 @@
-import "server-only";
 import { z } from "zod";
+
+// Server-side only. This module is deliberately free of the `server-only` guard so the
+// eval harness (plain Node) can load it; never import it from a client component.
 
 const emailList = z
   .string()

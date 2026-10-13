@@ -1,24 +1,34 @@
-import "server-only";
 import Anthropic from "@anthropic-ai/sdk";
 import { env } from "@/env";
 import { ModelRefusalError, type ModelProvider, type ModelRequest, type ModelResponse } from "@/lib/llm/provider";
 
-let client: Anthropic | undefined;
+/** The slice of the SDK client this provider uses; injectable for tests. */
+export type MessagesClient = Pick<Anthropic["beta"]["messages"], "create">;
 
-function getClient(): Anthropic {
-  if (!client) {
+let defaultClient: Anthropic | undefined;
+
+function getDefaultClient(): Anthropic {
+  if (!defaultClient) {
     const apiKey = env().ANTHROPIC_API_KEY;
     if (!apiKey) {
       throw new Error("ANTHROPIC_API_KEY is not set. Add it to .env.local (see .env.example).");
     }
-    client = new Anthropic({ apiKey });
+    defaultClient = new Anthropic({ apiKey });
   }
-  return client;
+  return defaultClient;
 }
 
+/**
+ * Anthropic implementation of the provider seam. Server-side only.
+ * Cache breakpoints come in on the system blocks; `fallbacks: "default"` lets a
+ * policy refusal re-run on a sibling model inside the same call.
+ */
 export class AnthropicProvider implements ModelProvider {
+  constructor(private readonly client?: MessagesClient) {}
+
   async complete(request: ModelRequest): Promise<ModelResponse> {
-    const response = await getClient().beta.messages.create({
+    const client = this.client ?? getDefaultClient().beta.messages;
+    const response = await client.create({
       model: request.model,
       max_tokens: request.maxTokens,
       system: request.system,

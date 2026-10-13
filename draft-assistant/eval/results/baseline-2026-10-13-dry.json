@@ -1,0 +1,947 @@
+{
+  "ranAt": "2026-10-13T18:12:43.612Z",
+  "mode": "dry",
+  "models": {
+    "standard": "claude-sonnet-5-5",
+    "premium": "claude-opus-5-5"
+  },
+  "cases": [
+    {
+      "id": "gn-01-elevated-sfr",
+      "type": "GENERAL_NOTES",
+      "model": "dry:claude-opus-5-5",
+      "tier": "premium",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0
+      },
+      "latencyMs": 1,
+      "output": "GENERAL\n1.1 These notes apply to all sheets unless noted otherwise. Where a conflict exists between notes, drawings, and specifications, the more stringent requirement governs. Contractor shall notify Architect before proceeding.\n1.2 Contractor shall verify all dimensions and existing conditions in the field prior to ordering materials or beginning work. Do not scale drawings.\n1.3 Contractor is responsible for means, methods, sequencing, and jobsite safety.\n1.4 All work shall be performed by licensed contractors in accordance with the permit and the approved construction documents. Permit set shall remain on site.\n\nCODES AND STANDARDS\n2.1 All work shall comply with the Florida Building Code, Residential, current adopted edition, and all amendments adopted by the City of Key West and Monroe County.\n2.2 Structural design is based on the wind speed, exposure category, and risk category shown on the structural sheets. Contractor shall verify all exterior openings and cladding carry a current Florida Product Approval or Miami-Dade NOA for the design pressures indicated.\n2.3 Flood-resistant construction shall comply with the Monroe County and City of Key West floodplain management ordinances and the FEMA flood zone and base flood elevation shown on the site plan.\n\nSITE\n3.1 Contractor shall locate and protect all existing utilities prior to excavation. Call 811 before digging.\n3.2 Finished grade shall slope away from the structure a minimum of 6 inches in the first 10 feet unless otherwise shown.\n3.3 Protect existing trees designated to remain. No storage of materials or equipment within the drip line.\n\nSTRUCTURAL\n4.1 Refer to structural sheets for foundation, pile, and framing requirements. Structural notes govern over architectural notes for structural work.\n4.2 All connectors and fasteners exposed to weather shall be hot-dip galvanized or stainless steel. Contractor shall verify compatibility with pressure-treated lumber.\n4.3 Enclosed areas below the base flood elevation shall be used only for parking, access, and storage, with flood vents as shown.\n\nEXTERIOR ENVELOPE\n5.1 Install a continuous secondary water barrier at the roof deck per the roofing manufacturer and the adopted code. Contractor shall verify underlayment product approval.\n5.2 All exterior penetrations shall be flashed and sealed. Provide sealant compatible with adjacent materials.\n5.3 Exterior wood trim shall be back-primed prior to installation.\n\nDOORS AND WINDOWS\n6.1 All exterior doors and windows shall be impact-rated and carry a current Florida Product Approval for the design pressures shown. Submit product approvals and installation instructions prior to ordering.\n6.2 Install per manufacturer's instructions and the approved product approval. Contractor shall verify rough openings in the field.\n\nFINISHES\n7.1 Submit samples of all exposed finishes for Architect's review prior to ordering.\n7.2 Interior gypsum board at wet areas shall be moisture-resistant. Provide cement backer board at all tile locations.",
+      "score": {
+        "id": "gn-01-elevated-sfr",
+        "checks": [
+          {
+            "name": "non-empty output",
+            "passed": true,
+            "detail": "3023 chars"
+          },
+          {
+            "name": "required sections present",
+            "passed": true
+          },
+          {
+            "name": "section: STRUCTURAL",
+            "passed": true
+          },
+          {
+            "name": "section: DOORS AND WINDOWS",
+            "passed": true
+          },
+          {
+            "name": "format: section.note numbering",
+            "passed": true
+          },
+          {
+            "name": "format: ALL-CAPS heading",
+            "passed": true
+          },
+          {
+            "name": "no markdown markup",
+            "passed": true
+          },
+          {
+            "name": "no preamble or commentary",
+            "passed": true
+          },
+          {
+            "name": "no fabricated code citations",
+            "passed": true
+          },
+          {
+            "name": "mentions: Florida Building Code",
+            "passed": true
+          },
+          {
+            "name": "mentions: product approval",
+            "passed": true
+          },
+          {
+            "name": "mentions: flood",
+            "passed": true
+          },
+          {
+            "name": "avoids: lorem",
+            "passed": true
+          },
+          {
+            "name": "avoids: [insert",
+            "passed": true
+          }
+        ],
+        "score": 1
+      }
+    },
+    {
+      "id": "gn-02-historic-harc",
+      "type": "GENERAL_NOTES",
+      "model": "dry:claude-sonnet-5-5",
+      "tier": "standard",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0
+      },
+      "latencyMs": 0,
+      "output": "GENERAL\n1.1 These notes apply to all sheets unless noted otherwise. The more stringent requirement governs where notes, drawings, and specifications conflict.\n1.2 Contractor shall verify all existing conditions and dimensions in the field before fabrication or ordering. Report discrepancies to Architect prior to proceeding.\n1.3 The existing structure is a contributing structure within the Key West Historic District. All exterior work shall match the approved HARC Certificate of Appropriateness. No deviation from the approved exterior materials, profiles, or colors without Architect and HARC approval.\n1.4 Contractor shall protect existing historic fabric designated to remain. Salvage and store for reuse all original materials noted on the demolition plan.\n\nCODES AND STANDARDS\n2.1 All work shall comply with the Florida Building Code, Existing Building, current adopted edition, and the Florida Building Code, Residential, as applicable, with local amendments.\n2.2 Work shall comply with the City of Key West Historic Architectural Review Commission guidelines as approved for this project.\n2.3 Contractor shall verify flood zone, base flood elevation, and substantial improvement determination with the Building Department prior to commencing work.\n\nDEMOLITION\n3.1 Demolish only the items indicated. Shore and brace existing construction as required to maintain structural stability during the work.\n3.2 Salvage existing Dade County pine framing, flooring, and siding where indicated for reuse. Stack and protect from weather.\n3.3 Contractor shall verify the presence of lead paint and asbestos-containing materials and comply with all applicable regulations for handling and disposal.\n\nSTRUCTURAL\n4.1 Refer to structural sheets. Where new framing connects to existing, Contractor shall expose and verify existing member sizes and condition and notify Architect of deterioration before proceeding.\n4.2 New wood framing in contact with masonry or concrete shall be pressure treated. All exterior connectors shall be hot-dip galvanized or stainless steel.\n\nEXTERIOR ENVELOPE\n5.1 New siding, trim, and corner boards shall match existing profiles and exposures as approved by HARC. Submit samples prior to ordering.\n5.2 Existing wood windows designated to remain shall be repaired in place. Replacement sash, where approved, shall match the existing in profile, muntin pattern, and glazing configuration.\n5.3 Roofing shall be as approved by HARC. Install a continuous secondary water barrier at new roof decks.\n\nDOORS AND WINDOWS\n6.1 New exterior doors and windows at the addition shall be impact-rated with a current Florida Product Approval for the design pressures shown.\n6.2 Contractor shall verify all openings in existing walls in the field prior to ordering.\n\nFINISHES\n7.1 Match new interior trim profiles to existing where new meets existing. Provide samples for Architect's review.\n7.2 Refinish existing wood floors designated to remain. Patch with salvaged material where indicated.",
+      "score": {
+        "id": "gn-02-historic-harc",
+        "checks": [
+          {
+            "name": "non-empty output",
+            "passed": true,
+            "detail": "2998 chars"
+          },
+          {
+            "name": "required sections present",
+            "passed": true
+          },
+          {
+            "name": "section: DEMOLITION",
+            "passed": true
+          },
+          {
+            "name": "section: STRUCTURAL",
+            "passed": true
+          },
+          {
+            "name": "format: section.note numbering",
+            "passed": true
+          },
+          {
+            "name": "format: ALL-CAPS heading",
+            "passed": true
+          },
+          {
+            "name": "no markdown markup",
+            "passed": true
+          },
+          {
+            "name": "no preamble or commentary",
+            "passed": true
+          },
+          {
+            "name": "no fabricated code citations",
+            "passed": true
+          },
+          {
+            "name": "mentions: HARC",
+            "passed": true
+          },
+          {
+            "name": "mentions: Dade County pine",
+            "passed": true
+          },
+          {
+            "name": "mentions: verify",
+            "passed": true
+          },
+          {
+            "name": "avoids: lorem",
+            "passed": true
+          },
+          {
+            "name": "avoids: [insert",
+            "passed": true
+          }
+        ],
+        "score": 1
+      }
+    },
+    {
+      "id": "spec-01-metal-roof",
+      "type": "SPEC_SECTION",
+      "model": "dry:claude-opus-5-5",
+      "tier": "premium",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0
+      },
+      "latencyMs": 0,
+      "output": "SECTION - STANDING-SEAM METAL ROOF PANELS\n\nPART 1 - GENERAL\n\n1.01 SUMMARY\n    A. Section includes factory-formed standing-seam metal roof panels, clips, closures, trim, and accessories.\n    B. Related requirements: roof sheathing and secondary water barrier are specified on the drawings and in the related sections.\n\n1.02 REFERENCES\n    A. Florida Building Code, current adopted edition, as amended by the Authority Having Jurisdiction.\n    B. Manufacturer's current Florida Product Approval for the panel system and attachment method indicated.\n\n1.03 SUBMITTALS\n    A. Product data: panel profile, gauge, finish, clip, and fastener data.\n    B. Shop drawings: panel layout, seam locations, flashing and trim details, and attachment schedule for the design pressures shown on the drawings.\n    C. Florida Product Approval and installation instructions matching the attachment schedule.\n    D. Samples: 12-inch panel section in each finish color for Architect's review.\n\n1.04 QUALITY ASSURANCE\n    A. Installer: approved by the panel manufacturer with documented experience on standing-seam systems in coastal high-wind locations.\n    B. Pre-installation conference: review substrate condition, underlayment, and attachment schedule before work begins.\n\n1.05 WARRANTY\n    A. Manufacturer's finish warranty and weathertightness warranty as indicated on the drawings. Contractor shall verify warranty terms are available for the coastal exposure of this project.\n\nPART 2 - PRODUCTS\n\n2.01 MANUFACTURERS\n    A. Basis of design: as scheduled on the drawings. Substitutions per the general conditions, with equivalent Florida Product Approval.\n\n2.02 PANELS\n    A. Profile, seam height, and panel width as indicated on the drawings.\n    B. Material: aluminum or coated steel as scheduled. Contractor shall verify material is suitable for the marine exposure of this site.\n    C. Finish: factory-applied fluoropolymer coating in the color selected by Architect.\n\n2.03 ACCESSORIES\n    A. Clips, fasteners, and closures: as required by the Florida Product Approval. Fasteners exposed to weather shall be stainless steel or as approved.\n    B. Flashing and trim: same material and finish as panels unless otherwise shown.\n    C. Sealant: as recommended by the panel manufacturer and compatible with the finish.\n\nPART 3 - EXECUTION\n\n3.01 EXAMINATION\n    A. Verify that roof sheathing and secondary water barrier are complete, dry, and fastened per the structural drawings before installing panels.\n    B. Report unacceptable conditions to Architect. Do not proceed until corrected.\n\n3.02 INSTALLATION\n    A. Install panels, clips, and fasteners per the manufacturer's instructions and the Florida Product Approval, with the attachment schedule for the design pressures shown.\n    B. Provide for thermal movement. Do not pin panels at both ends.\n    C. Install flashing, closures, and trim to shed water. Seal all penetrations.\n\n3.03 CLEANING AND PROTECTION\n    A. Remove metal filings and debris from the roof daily. Touch up minor finish damage per the manufacturer; replace panels with damage beyond touch-up.\n    B. Protect installed roofing from subsequent trades.\n\nEND OF SECTION",
+      "score": {
+        "id": "spec-01-metal-roof",
+        "checks": [
+          {
+            "name": "non-empty output",
+            "passed": true,
+            "detail": "3172 chars"
+          },
+          {
+            "name": "required sections present",
+            "passed": true
+          },
+          {
+            "name": "section: 1.01 SUMMARY",
+            "passed": true
+          },
+          {
+            "name": "section: 2.01",
+            "passed": true
+          },
+          {
+            "name": "section: 3.01",
+            "passed": true
+          },
+          {
+            "name": "format: article numbering",
+            "passed": true
+          },
+          {
+            "name": "format: lettered paragraph",
+            "passed": true
+          },
+          {
+            "name": "format: END OF SECTION",
+            "passed": true
+          },
+          {
+            "name": "no markdown markup",
+            "passed": true
+          },
+          {
+            "name": "no preamble or commentary",
+            "passed": true
+          },
+          {
+            "name": "no fabricated code citations",
+            "passed": true
+          },
+          {
+            "name": "mentions: Product Approval",
+            "passed": true
+          },
+          {
+            "name": "mentions: END OF SECTION",
+            "passed": true
+          },
+          {
+            "name": "avoids: lorem",
+            "passed": true
+          },
+          {
+            "name": "avoids: [insert",
+            "passed": true
+          }
+        ],
+        "score": 1
+      }
+    },
+    {
+      "id": "spec-02-impact-windows",
+      "type": "SPEC_SECTION",
+      "model": "dry:claude-opus-5-5",
+      "tier": "premium",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0
+      },
+      "latencyMs": 0,
+      "output": "SECTION - IMPACT-RESISTANT ALUMINUM WINDOWS\n\nPART 1 - GENERAL\n\n1.01 SUMMARY\n    A. Section includes impact-resistant aluminum-framed windows with laminated insulating glazing, hardware, screens, and anchorage.\n\n1.02 REFERENCES\n    A. Florida Building Code, current adopted edition, as amended by the Authority Having Jurisdiction.\n    B. Manufacturer's current Florida Product Approval or Miami-Dade NOA for each window type and installation method indicated.\n\n1.03 SUBMITTALS\n    A. Product data for each window type, including frame finish, glazing makeup, and hardware.\n    B. Shop drawings: elevations of each window type, anchorage details, and the installation method matching the product approval.\n    C. Product approvals with design pressure ratings equal to or exceeding the design pressures shown on the drawings.\n    D. Samples: frame finish and glazing sample for Architect's review.\n\n1.04 QUALITY ASSURANCE\n    A. Installer approved by the window manufacturer.\n    B. Field-verify rough openings before fabrication. Contractor shall verify all dimensions in the field.\n\n1.05 WARRANTY\n    A. Manufacturer's warranty for frame finish, glazing seal failure, and hardware as indicated on the drawings.\n\nPART 2 - PRODUCTS\n\n2.01 MANUFACTURERS\n    A. Basis of design: as scheduled on the window schedule. Substitutions per the general conditions with equivalent product approval.\n\n2.02 WINDOWS\n    A. Types, sizes, and operation as shown on the window schedule.\n    B. Frames: extruded aluminum with thermal break where scheduled. Finish: factory-applied in the color selected by Architect.\n    C. Glazing: laminated impact-resistant glass, insulating where scheduled, with the solar performance indicated on the drawings.\n    D. Hardware: manufacturer's standard corrosion-resistant hardware suitable for marine exposure.\n\n2.03 ACCESSORIES\n    A. Anchors and fasteners: stainless steel or as required by the product approval.\n    B. Sealants, flashing, and sill pans: as recommended by the manufacturer and compatible with adjacent materials.\n    C. Insect screens at operable units.\n\nPART 3 - EXECUTION\n\n3.01 EXAMINATION\n    A. Verify rough openings are plumb, square, and sized per the manufacturer's tolerances. Verify bucks and blocking are in place per the structural drawings.\n\n3.02 INSTALLATION\n    A. Install per the manufacturer's instructions and the product approval, using the anchorage shown on the approved shop drawings.\n    B. Install sill pans and flashing integrated with the weather-resistive barrier to drain to the exterior.\n    C. Seal perimeter joints continuously.\n\n3.03 ADJUSTING, CLEANING, AND PROTECTION\n    A. Adjust operable units for smooth operation and weathertight closure.\n    B. Clean glass and frames. Remove labels only after inspection. Protect from construction damage.\n\nEND OF SECTION",
+      "score": {
+        "id": "spec-02-impact-windows",
+        "checks": [
+          {
+            "name": "non-empty output",
+            "passed": true,
+            "detail": "2832 chars"
+          },
+          {
+            "name": "required sections present",
+            "passed": true
+          },
+          {
+            "name": "section: 1.03 SUBMITTALS",
+            "passed": true
+          },
+          {
+            "name": "section: 3.02 INSTALLATION",
+            "passed": true
+          },
+          {
+            "name": "format: article numbering",
+            "passed": true
+          },
+          {
+            "name": "format: lettered paragraph",
+            "passed": true
+          },
+          {
+            "name": "format: END OF SECTION",
+            "passed": true
+          },
+          {
+            "name": "no markdown markup",
+            "passed": true
+          },
+          {
+            "name": "no preamble or commentary",
+            "passed": true
+          },
+          {
+            "name": "no fabricated code citations",
+            "passed": true
+          },
+          {
+            "name": "mentions: impact",
+            "passed": true
+          },
+          {
+            "name": "mentions: verify",
+            "passed": true
+          },
+          {
+            "name": "avoids: lorem",
+            "passed": true
+          },
+          {
+            "name": "avoids: [insert",
+            "passed": true
+          }
+        ],
+        "score": 1
+      }
+    },
+    {
+      "id": "sched-01-door",
+      "type": "SCHEDULE",
+      "model": "dry:claude-sonnet-5-5",
+      "tier": "standard",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0
+      },
+      "latencyMs": 0,
+      "output": "DOOR SCHEDULE\nMARK | LOCATION | TYPE | SIZE (W x H) | MATERIAL | GLAZING | HARDWARE SET | RATING | REMARKS\nD01 | Front entry | Single swing | 3'-0\" x 8'-0\" | Fiberglass, impact | Laminated impact | HW-1 | -- | Florida Product Approval required\nD02 | Rear porch | French pair | 6'-0\" x 8'-0\" | Aluminum, impact | Laminated impact | HW-2 | -- | Florida Product Approval required\nD03 | Garage to stair | Single swing | 2'-8\" x 6'-8\" | Solid-core wood | -- | HW-3 | 20 min | Self-closing, weatherstripped\nD04 | Primary bedroom | Single swing | 2'-8\" x 6'-8\" | Solid-core wood | -- | HW-4 | -- | --\nD05 | Primary bath | Pocket | 2'-6\" x 6'-8\" | Solid-core wood | -- | HW-5 | -- | Privacy set\nD06 | Bedroom 2 | Single swing | 2'-8\" x 6'-8\" | Solid-core wood | -- | HW-4 | -- | --\nD07 | Laundry | Bi-fold pair | 4'-0\" x 6'-8\" | Hollow-core wood | -- | HW-6 | -- | Louvered\nD08 | Ground-level storage | Single swing | 3'-0\" x 6'-8\" | Fiberglass, impact | -- | HW-7 | -- | Below BFE; flood-resistant materials\n\nNOTES\n1. Contractor shall verify all rough openings in the field prior to ordering.\n2. Submit product data, hardware schedule, and Florida Product Approvals for all exterior doors prior to ordering.\n3. Exterior doors shall be impact-rated for the design pressures shown on the structural drawings.\n4. Hardware sets are defined in the hardware schedule. Finish: as selected by Architect.\n5. Doors below the base flood elevation shall be flood-damage-resistant materials.",
+      "score": {
+        "id": "sched-01-door",
+        "checks": [
+          {
+            "name": "non-empty output",
+            "passed": true,
+            "detail": "1471 chars"
+          },
+          {
+            "name": "required sections present",
+            "passed": true
+          },
+          {
+            "name": "section: DOOR SCHEDULE",
+            "passed": true
+          },
+          {
+            "name": "format: ALL-CAPS title ending in SCHEDULE",
+            "passed": true
+          },
+          {
+            "name": "format: pipe-delimited header",
+            "passed": true
+          },
+          {
+            "name": "format: mark or room number row",
+            "passed": true
+          },
+          {
+            "name": "format: numbered note",
+            "passed": true
+          },
+          {
+            "name": "no markdown markup",
+            "passed": true
+          },
+          {
+            "name": "no preamble or commentary",
+            "passed": true
+          },
+          {
+            "name": "no fabricated code citations",
+            "passed": true
+          },
+          {
+            "name": "mentions: D01",
+            "passed": true
+          },
+          {
+            "name": "mentions: VERIFY",
+            "passed": true
+          },
+          {
+            "name": "mentions: Product Approval",
+            "passed": true
+          },
+          {
+            "name": "avoids: lorem",
+            "passed": true
+          },
+          {
+            "name": "avoids: [insert",
+            "passed": true
+          }
+        ],
+        "score": 1
+      }
+    },
+    {
+      "id": "sched-02-finish",
+      "type": "SCHEDULE",
+      "model": "dry:claude-sonnet-5-5",
+      "tier": "standard",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0
+      },
+      "latencyMs": 0,
+      "output": "ROOM FINISH SCHEDULE\nROOM NO. | ROOM NAME | FLOOR | BASE | WALLS | CEILING | CEILING HT | REMARKS\n101 | Sales floor | Porcelain tile, PT-1 | Tile, PT-1 | Painted gypsum board, P-1 | Exposed structure, painted P-3 | VERIFY | Slip-resistant tile at accessible route\n102 | Fitting rooms | Luxury vinyl plank, LVP-1 | Wood, painted P-2 | Painted gypsum board, P-1 | Gypsum board, painted P-3 | 9'-0\" | Blocking for hooks and bench\n103 | Stock room | Sealed concrete, SC-1 | Rubber, RB-1 | Painted gypsum board, P-1 | Exposed structure, painted P-3 | VERIFY | --\n104 | Office | Carpet tile, CPT-1 | Rubber, RB-1 | Painted gypsum board, P-1 | Acoustic ceiling tile, ACT-1 | 9'-0\" | --\n105 | Toilet room | Porcelain tile, PT-2 | Tile, PT-2 | Tile wainscot PT-3 to 4'-0\", painted MR gypsum board P-1 above | Gypsum board, painted P-3 | 8'-0\" | Accessible fixtures and grab bars per drawings\n106 | Janitor | Sealed concrete, SC-1 | Rubber, RB-1 | Painted MR gypsum board, P-1 | Gypsum board, painted P-3 | 8'-0\" | FRP wainscot at mop sink\n\nNOTES\n1. Finish designations refer to the finish legend. Submit samples of all finishes for Architect's review prior to ordering.\n2. Contractor shall verify ceiling heights in the field where noted VERIFY.\n3. Floor finishes at accessible routes shall be firm, stable, and slip resistant.\n4. Provide moisture-resistant gypsum board and cement backer board at all wet areas.\n5. Paint: one coat primer and two finish coats minimum. Colors as selected by Architect.",
+      "score": {
+        "id": "sched-02-finish",
+        "checks": [
+          {
+            "name": "non-empty output",
+            "passed": true,
+            "detail": "1492 chars"
+          },
+          {
+            "name": "required sections present",
+            "passed": true
+          },
+          {
+            "name": "section: ROOM FINISH SCHEDULE",
+            "passed": true
+          },
+          {
+            "name": "format: ALL-CAPS title ending in SCHEDULE",
+            "passed": true
+          },
+          {
+            "name": "format: pipe-delimited header",
+            "passed": true
+          },
+          {
+            "name": "format: mark or room number row",
+            "passed": true
+          },
+          {
+            "name": "format: numbered note",
+            "passed": true
+          },
+          {
+            "name": "no markdown markup",
+            "passed": true
+          },
+          {
+            "name": "no preamble or commentary",
+            "passed": true
+          },
+          {
+            "name": "no fabricated code citations",
+            "passed": true
+          },
+          {
+            "name": "mentions: 101",
+            "passed": true
+          },
+          {
+            "name": "mentions: slip",
+            "passed": true
+          },
+          {
+            "name": "mentions: VERIFY",
+            "passed": true
+          },
+          {
+            "name": "avoids: lorem",
+            "passed": true
+          },
+          {
+            "name": "avoids: [insert",
+            "passed": true
+          }
+        ],
+        "score": 1
+      }
+    },
+    {
+      "id": "gn-03-pool-cabana-county",
+      "type": "GENERAL_NOTES",
+      "model": "dry:claude-sonnet-5-5",
+      "tier": "standard",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0
+      },
+      "latencyMs": 0,
+      "output": "GENERAL\n1.1 These notes apply to all sheets unless noted otherwise. The more stringent requirement governs where notes, drawings, and specifications conflict.\n1.2 Contractor shall verify all dimensions, setbacks, and existing conditions in the field prior to construction. Report discrepancies to Architect before proceeding.\n1.3 Contractor shall maintain the existing residence weather-tight and occupied throughout construction. Coordinate utility interruptions with Owner 48 hours in advance.\n\nCODES AND STANDARDS\n2.1 All work shall comply with the Florida Building Code, Residential, current adopted edition, with amendments adopted by Monroe County.\n2.2 Swimming pool construction, barriers, and equipment shall comply with the residential swimming pool provisions of the adopted code. Pool contractor shall provide engineered pool drawings under separate permit.\n2.3 Contractor shall verify flood zone and base flood elevation for all new construction with the Monroe County Building Department.\n\nSITE\n3.1 Contractor shall locate and protect existing utilities, septic components, and drainage structures prior to excavation.\n3.2 Stormwater shall be retained on site. Do not direct roof or deck drainage toward adjacent properties.\n3.3 Protect existing native vegetation designated to remain. Removal of protected species requires County approval.\n\nSTRUCTURAL\n4.1 Refer to structural sheets for cabana foundation and framing. All exterior connectors and fasteners shall be hot-dip galvanized or stainless steel.\n4.2 Cabana roof framing and sheathing shall be installed per the structural sheets with connectors as scheduled.\n\nEXTERIOR ENVELOPE\n5.1 Cabana roofing shall match the existing residence in material and color. Install a continuous secondary water barrier at the roof deck.\n5.2 Exterior wood shall be back-primed and all cut ends sealed prior to installation.\n\nFINISHES\n6.1 Pool deck finish shall be slip resistant. Submit samples for Architect's and Owner's review.\n6.2 Outdoor shower and cabana bath finishes shall be rated for exterior and wet exposure.",
+      "score": {
+        "id": "gn-03-pool-cabana-county",
+        "checks": [
+          {
+            "name": "non-empty output",
+            "passed": true,
+            "detail": "2072 chars"
+          },
+          {
+            "name": "required sections present",
+            "passed": true
+          },
+          {
+            "name": "section: SITE",
+            "passed": true
+          },
+          {
+            "name": "format: section.note numbering",
+            "passed": true
+          },
+          {
+            "name": "format: ALL-CAPS heading",
+            "passed": true
+          },
+          {
+            "name": "no markdown markup",
+            "passed": true
+          },
+          {
+            "name": "no preamble or commentary",
+            "passed": true
+          },
+          {
+            "name": "no fabricated code citations",
+            "passed": true
+          },
+          {
+            "name": "mentions: pool",
+            "passed": true
+          },
+          {
+            "name": "mentions: septic",
+            "passed": true
+          },
+          {
+            "name": "mentions: vegetation",
+            "passed": true
+          },
+          {
+            "name": "avoids: lorem",
+            "passed": true
+          },
+          {
+            "name": "avoids: [insert",
+            "passed": true
+          }
+        ],
+        "score": 1
+      }
+    },
+    {
+      "id": "gn-04-retail-ti",
+      "type": "GENERAL_NOTES",
+      "model": "dry:claude-sonnet-5-5",
+      "tier": "standard",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0
+      },
+      "latencyMs": 0,
+      "output": "GENERAL\n1.1 These notes apply to all sheets unless noted otherwise. The more stringent requirement governs where notes, drawings, and specifications conflict.\n1.2 Contractor shall verify all existing conditions, dimensions, and utility locations in the field prior to beginning work. Report discrepancies to Architect before proceeding.\n1.3 Work shall be coordinated with the Landlord and adjacent tenants. Maintain egress from adjacent spaces at all times during construction.\n1.4 Contractor shall keep the premises secure and weather-tight at the end of each work day.\n\nCODES AND STANDARDS\n2.1 All work shall comply with the Florida Building Code, Building, and the Florida Building Code, Existing Building, current adopted editions, with amendments adopted by the City of Key West.\n2.2 Accessibility shall comply with the Florida Building Code, Accessibility, current adopted edition. Contractor shall verify clearances, reach ranges, and mounting heights as shown.\n2.3 Fire protection, fire alarm, and life-safety work shall be designed and installed by licensed contractors under separate permit. Coordinate with the Fire Marshal.\n\nDEMOLITION\n3.1 Remove existing finishes, partitions, and fixtures as indicated. Cap and make safe all abandoned utilities.\n3.2 Contractor shall verify that no structural element is removed or altered without written direction from Architect.\n\nINTERIOR CONSTRUCTION\n4.1 Interior partitions shall be as scheduled. Extend partitions to the underside of structure where indicated as full-height or rated.\n4.2 Provide blocking in walls for all wall-mounted fixtures, casework, grab bars, and equipment whether or not shown.\n4.3 Seal all penetrations through rated assemblies with listed firestopping systems.\n\nSTOREFRONT\n5.1 Storefront glazing and doors shall be impact-rated with a current Florida Product Approval for the design pressures shown. Submit shop drawings and product approvals prior to fabrication.\n5.2 Contractor shall verify existing storefront opening dimensions in the field.\n\nFINISHES\n6.1 Submit samples of all exposed finishes for Architect's review prior to ordering.\n6.2 Floor finishes at accessible routes shall be firm, stable, and slip resistant. Transitions shall not exceed the thresholds permitted by the accessibility code.\n6.3 Provide moisture-resistant gypsum board at all wet areas and cement backer board behind tile.",
+      "score": {
+        "id": "gn-04-retail-ti",
+        "checks": [
+          {
+            "name": "non-empty output",
+            "passed": true,
+            "detail": "2382 chars"
+          },
+          {
+            "name": "required sections present",
+            "passed": true
+          },
+          {
+            "name": "section: DEMOLITION",
+            "passed": true
+          },
+          {
+            "name": "section: STOREFRONT",
+            "passed": true
+          },
+          {
+            "name": "format: section.note numbering",
+            "passed": true
+          },
+          {
+            "name": "format: ALL-CAPS heading",
+            "passed": true
+          },
+          {
+            "name": "no markdown markup",
+            "passed": true
+          },
+          {
+            "name": "no preamble or commentary",
+            "passed": true
+          },
+          {
+            "name": "no fabricated code citations",
+            "passed": true
+          },
+          {
+            "name": "mentions: accessib",
+            "passed": true
+          },
+          {
+            "name": "mentions: Landlord",
+            "passed": true
+          },
+          {
+            "name": "mentions: separate permit",
+            "passed": true
+          },
+          {
+            "name": "avoids: lorem",
+            "passed": true
+          },
+          {
+            "name": "avoids: [insert",
+            "passed": true
+          }
+        ],
+        "score": 1
+      }
+    },
+    {
+      "id": "spec-03-gypsum",
+      "type": "SPEC_SECTION",
+      "model": "dry:claude-sonnet-5-5",
+      "tier": "standard",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0
+      },
+      "latencyMs": 0,
+      "output": "SECTION - GYPSUM BOARD ASSEMBLIES\n\nPART 1 - GENERAL\n\n1.01 SUMMARY\n    A. Section includes interior gypsum board, moisture-resistant gypsum board, cement backer board, accessories, and finishing.\n\n1.02 REFERENCES\n    A. Florida Building Code, current adopted edition, as amended by the Authority Having Jurisdiction.\n    B. Gypsum board manufacturer's published installation and finishing recommendations.\n\n1.03 SUBMITTALS\n    A. Product data for each board type, accessory, joint compound, and backer board.\n    B. Finish level mock-up at a location selected by Architect, minimum 4 feet by 4 feet, before beginning finishing.\n\n1.04 QUALITY ASSURANCE\n    A. Store board flat and dry. Do not install board that has been wet or is visibly damaged.\n    B. Maintain interior temperature and ventilation per the manufacturer during finishing.\n\nPART 2 - PRODUCTS\n\n2.01 BOARD\n    A. Gypsum board: thickness as shown on the drawings, tapered edges.\n    B. Moisture- and mold-resistant gypsum board at toilet rooms, janitor closets, and other wet areas as indicated.\n    C. Cement backer board at all tile locations.\n\n2.02 ACCESSORIES\n    A. Corner bead, control joints, and trim: galvanized steel or vinyl as scheduled.\n    B. Fasteners: corrosion-resistant screws sized for the framing type.\n    C. Joint tape and compound: as recommended by the board manufacturer for the finish level indicated.\n\nPART 3 - EXECUTION\n\n3.01 EXAMINATION\n    A. Verify framing, blocking, and in-wall rough-ins are complete and inspected before installing board.\n\n3.02 INSTALLATION\n    A. Install board with joints staggered and edges supported. Fasten per the manufacturer's recommendations.\n    B. Extend board to the underside of structure at full-height and rated partitions. Seal rated assemblies per the listed system.\n    C. Provide control joints where shown and at the spacing recommended by the manufacturer.\n\n3.03 FINISHING\n    A. Finish to the level scheduled: Level 4 at painted walls and ceilings unless otherwise indicated; Level 2 above ceilings and behind tile.\n    B. Sand lightly and remove dust before priming.\n\n3.04 PROTECTION\n    A. Protect finished surfaces from damage until final acceptance.\n\nEND OF SECTION",
+      "score": {
+        "id": "spec-03-gypsum",
+        "checks": [
+          {
+            "name": "non-empty output",
+            "passed": true,
+            "detail": "2204 chars"
+          },
+          {
+            "name": "required sections present",
+            "passed": true
+          },
+          {
+            "name": "section: 3.03 FINISHING",
+            "passed": true
+          },
+          {
+            "name": "format: article numbering",
+            "passed": true
+          },
+          {
+            "name": "format: lettered paragraph",
+            "passed": true
+          },
+          {
+            "name": "format: END OF SECTION",
+            "passed": true
+          },
+          {
+            "name": "no markdown markup",
+            "passed": true
+          },
+          {
+            "name": "no preamble or commentary",
+            "passed": true
+          },
+          {
+            "name": "no fabricated code citations",
+            "passed": true
+          },
+          {
+            "name": "mentions: moisture",
+            "passed": true
+          },
+          {
+            "name": "mentions: backer board",
+            "passed": true
+          },
+          {
+            "name": "mentions: Level 4",
+            "passed": true
+          },
+          {
+            "name": "avoids: lorem",
+            "passed": true
+          },
+          {
+            "name": "avoids: [insert",
+            "passed": true
+          }
+        ],
+        "score": 1
+      }
+    },
+    {
+      "id": "spec-04-exterior-wood-trim",
+      "type": "SPEC_SECTION",
+      "model": "dry:claude-opus-5-5",
+      "tier": "premium",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0
+      },
+      "latencyMs": 0,
+      "output": "SECTION - STANDING-SEAM METAL ROOF PANELS\n\nPART 1 - GENERAL\n\n1.01 SUMMARY\n    A. Section includes factory-formed standing-seam metal roof panels, clips, closures, trim, and accessories.\n    B. Related requirements: roof sheathing and secondary water barrier are specified on the drawings and in the related sections.\n\n1.02 REFERENCES\n    A. Florida Building Code, current adopted edition, as amended by the Authority Having Jurisdiction.\n    B. Manufacturer's current Florida Product Approval for the panel system and attachment method indicated.\n\n1.03 SUBMITTALS\n    A. Product data: panel profile, gauge, finish, clip, and fastener data.\n    B. Shop drawings: panel layout, seam locations, flashing and trim details, and attachment schedule for the design pressures shown on the drawings.\n    C. Florida Product Approval and installation instructions matching the attachment schedule.\n    D. Samples: 12-inch panel section in each finish color for Architect's review.\n\n1.04 QUALITY ASSURANCE\n    A. Installer: approved by the panel manufacturer with documented experience on standing-seam systems in coastal high-wind locations.\n    B. Pre-installation conference: review substrate condition, underlayment, and attachment schedule before work begins.\n\n1.05 WARRANTY\n    A. Manufacturer's finish warranty and weathertightness warranty as indicated on the drawings. Contractor shall verify warranty terms are available for the coastal exposure of this project.\n\nPART 2 - PRODUCTS\n\n2.01 MANUFACTURERS\n    A. Basis of design: as scheduled on the drawings. Substitutions per the general conditions, with equivalent Florida Product Approval.\n\n2.02 PANELS\n    A. Profile, seam height, and panel width as indicated on the drawings.\n    B. Material: aluminum or coated steel as scheduled. Contractor shall verify material is suitable for the marine exposure of this site.\n    C. Finish: factory-applied fluoropolymer coating in the color selected by Architect.\n\n2.03 ACCESSORIES\n    A. Clips, fasteners, and closures: as required by the Florida Product Approval. Fasteners exposed to weather shall be stainless steel or as approved.\n    B. Flashing and trim: same material and finish as panels unless otherwise shown.\n    C. Sealant: as recommended by the panel manufacturer and compatible with the finish.\n\nPART 3 - EXECUTION\n\n3.01 EXAMINATION\n    A. Verify that roof sheathing and secondary water barrier are complete, dry, and fastened per the structural drawings before installing panels.\n    B. Report unacceptable conditions to Architect. Do not proceed until corrected.\n\n3.02 INSTALLATION\n    A. Install panels, clips, and fasteners per the manufacturer's instructions and the Florida Product Approval, with the attachment schedule for the design pressures shown.\n    B. Provide for thermal movement. Do not pin panels at both ends.\n    C. Install flashing, closures, and trim to shed water. Seal all penetrations.\n\n3.03 CLEANING AND PROTECTION\n    A. Remove metal filings and debris from the roof daily. Touch up minor finish damage per the manufacturer; replace panels with damage beyond touch-up.\n    B. Protect installed roofing from subsequent trades.\n\nEND OF SECTION",
+      "score": {
+        "id": "spec-04-exterior-wood-trim",
+        "checks": [
+          {
+            "name": "non-empty output",
+            "passed": true,
+            "detail": "3172 chars"
+          },
+          {
+            "name": "required sections present",
+            "passed": true
+          },
+          {
+            "name": "section: 1.03 SUBMITTALS",
+            "passed": true
+          },
+          {
+            "name": "format: article numbering",
+            "passed": true
+          },
+          {
+            "name": "format: lettered paragraph",
+            "passed": true
+          },
+          {
+            "name": "format: END OF SECTION",
+            "passed": true
+          },
+          {
+            "name": "no markdown markup",
+            "passed": true
+          },
+          {
+            "name": "no preamble or commentary",
+            "passed": true
+          },
+          {
+            "name": "no fabricated code citations",
+            "passed": true
+          },
+          {
+            "name": "mentions: HARC",
+            "passed": false
+          },
+          {
+            "name": "mentions: back-prim",
+            "passed": false
+          },
+          {
+            "name": "mentions: stainless",
+            "passed": true
+          },
+          {
+            "name": "avoids: lorem",
+            "passed": true
+          },
+          {
+            "name": "avoids: [insert",
+            "passed": true
+          }
+        ],
+        "score": 0.8571428571428571
+      }
+    },
+    {
+      "id": "sched-03-window-historic",
+      "type": "SCHEDULE",
+      "model": "dry:claude-opus-5-5",
+      "tier": "premium",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0
+      },
+      "latencyMs": 0,
+      "output": "WINDOW SCHEDULE\nMARK | LOCATION | TYPE | SIZE (W x H) | FRAME | GLAZING | MUNTINS | EXISTING / NEW | REMARKS\nW01 | Front facade | Double-hung | 2'-8\" x 5'-6\" | Wood, painted | Single, restoration glass | 2 over 2, true divided | Existing, repair | Repair in place per HARC approval\nW02 | Front facade | Double-hung | 2'-8\" x 5'-6\" | Wood, painted | Single, restoration glass | 2 over 2, true divided | Existing, repair | Repair in place per HARC approval\nW03 | Side, kitchen | Double-hung | 2'-8\" x 4'-6\" | Wood, impact | Laminated impact | 2 over 2, simulated divided | New | Match existing profile; Florida Product Approval required\nW04 | Rear addition | Double-hung | 2'-8\" x 5'-0\" | Aluminum-clad wood, impact | Laminated impact | 2 over 2, simulated divided | New | Florida Product Approval required\nW05 | Rear addition | Fixed | 3'-0\" x 5'-0\" | Aluminum-clad wood, impact | Laminated impact | -- | New | Florida Product Approval required\nW06 | Bath | Awning | 2'-0\" x 2'-0\" | Aluminum-clad wood, impact | Laminated impact, obscure | -- | New | Tempered where required by code\n\nNOTES\n1. Contractor shall verify all existing and rough openings in the field prior to ordering.\n2. New exterior windows shall match the approved HARC Certificate of Appropriateness in profile, muntin pattern, and finish. Submit shop drawings for Architect's and HARC review.\n3. New windows shall be impact-rated with a current Florida Product Approval for the design pressures shown.\n4. Existing windows designated for repair shall be reglazed, weatherstripped, and made operable. Replace deteriorated sash members in kind.\n5. Safety glazing where required by code; Contractor shall verify locations.",
+      "score": {
+        "id": "sched-03-window-historic",
+        "checks": [
+          {
+            "name": "non-empty output",
+            "passed": true,
+            "detail": "1684 chars"
+          },
+          {
+            "name": "required sections present",
+            "passed": true
+          },
+          {
+            "name": "section: WINDOW SCHEDULE",
+            "passed": true
+          },
+          {
+            "name": "format: ALL-CAPS title ending in SCHEDULE",
+            "passed": true
+          },
+          {
+            "name": "format: pipe-delimited header",
+            "passed": true
+          },
+          {
+            "name": "format: mark or room number row",
+            "passed": true
+          },
+          {
+            "name": "format: numbered note",
+            "passed": true
+          },
+          {
+            "name": "no markdown markup",
+            "passed": true
+          },
+          {
+            "name": "no preamble or commentary",
+            "passed": true
+          },
+          {
+            "name": "no fabricated code citations",
+            "passed": true
+          },
+          {
+            "name": "mentions: W01",
+            "passed": true
+          },
+          {
+            "name": "mentions: HARC",
+            "passed": true
+          },
+          {
+            "name": "mentions: impact",
+            "passed": true
+          },
+          {
+            "name": "avoids: lorem",
+            "passed": true
+          },
+          {
+            "name": "avoids: [insert",
+            "passed": true
+          }
+        ],
+        "score": 1
+      }
+    },
+    {
+      "id": "sched-04-plumbing-fixture",
+      "type": "SCHEDULE",
+      "model": "dry:claude-sonnet-5-5",
+      "tier": "standard",
+      "usage": {
+        "inputTokens": 0,
+        "outputTokens": 0,
+        "cacheReadTokens": 0,
+        "cacheWriteTokens": 0
+      },
+      "latencyMs": 0,
+      "output": "DOOR SCHEDULE\nMARK | LOCATION | TYPE | SIZE (W x H) | MATERIAL | GLAZING | HARDWARE SET | RATING | REMARKS\nD01 | Front entry | Single swing | 3'-0\" x 8'-0\" | Fiberglass, impact | Laminated impact | HW-1 | -- | Florida Product Approval required\nD02 | Rear porch | French pair | 6'-0\" x 8'-0\" | Aluminum, impact | Laminated impact | HW-2 | -- | Florida Product Approval required\nD03 | Garage to stair | Single swing | 2'-8\" x 6'-8\" | Solid-core wood | -- | HW-3 | 20 min | Self-closing, weatherstripped\nD04 | Primary bedroom | Single swing | 2'-8\" x 6'-8\" | Solid-core wood | -- | HW-4 | -- | --\nD05 | Primary bath | Pocket | 2'-6\" x 6'-8\" | Solid-core wood | -- | HW-5 | -- | Privacy set\nD06 | Bedroom 2 | Single swing | 2'-8\" x 6'-8\" | Solid-core wood | -- | HW-4 | -- | --\nD07 | Laundry | Bi-fold pair | 4'-0\" x 6'-8\" | Hollow-core wood | -- | HW-6 | -- | Louvered\nD08 | Ground-level storage | Single swing | 3'-0\" x 6'-8\" | Fiberglass, impact | -- | HW-7 | -- | Below BFE; flood-resistant materials\n\nNOTES\n1. Contractor shall verify all rough openings in the field prior to ordering.\n2. Submit product data, hardware schedule, and Florida Product Approvals for all exterior doors prior to ordering.\n3. Exterior doors shall be impact-rated for the design pressures shown on the structural drawings.\n4. Hardware sets are defined in the hardware schedule. Finish: as selected by Architect.\n5. Doors below the base flood elevation shall be flood-damage-resistant materials.",
+      "score": {
+        "id": "sched-04-plumbing-fixture",
+        "checks": [
+          {
+            "name": "non-empty output",
+            "passed": true,
+            "detail": "1471 chars"
+          },
+          {
+            "name": "required sections present",
+            "passed": true
+          },
+          {
+            "name": "section: PLUMBING FIXTURE SCHEDULE",
+            "passed": false
+          },
+          {
+            "name": "format: ALL-CAPS title ending in SCHEDULE",
+            "passed": true
+          },
+          {
+            "name": "format: pipe-delimited header",
+            "passed": true
+          },
+          {
+            "name": "format: mark or room number row",
+            "passed": true
+          },
+          {
+            "name": "format: numbered note",
+            "passed": true
+          },
+          {
+            "name": "no markdown markup",
+            "passed": true
+          },
+          {
+            "name": "no preamble or commentary",
+            "passed": true
+          },
+          {
+            "name": "no fabricated code citations",
+            "passed": true
+          },
+          {
+            "name": "mentions: VERIFY",
+            "passed": true
+          },
+          {
+            "name": "mentions: outdoor shower",
+            "passed": false
+          },
+          {
+            "name": "avoids: lorem",
+            "passed": true
+          },
+          {
+            "name": "avoids: [insert",
+            "passed": true
+          }
+        ],
+        "score": 0.8571428571428571
+      }
+    }
+  ],
+  "overall": 0.9761904761904763
+}

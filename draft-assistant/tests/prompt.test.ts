@@ -47,3 +47,13 @@ describe("renderUserMessage", () => {
     expect(msg.trim().endsWith("Produce the schedule now. Output the document text only.")).toBe(true);
   });
 });
+
+describe("prompt caching prefix", () => {
+  it("keeps the stable first block above the 512-token cache minimum for every type, even with no examples", () => {
+    for (const type of ["GENERAL_NOTES", "SPEC_SECTION", "SCHEDULE"] as const) {
+      const p = assemblePrompt({ type, brief: "x", params, examples: [] });
+      // ~4 chars per token is conservative for English prose.
+      expect(p.system[0].text.length / 4, type).toBeGreaterThan(512);
+    }
+  });
+});
