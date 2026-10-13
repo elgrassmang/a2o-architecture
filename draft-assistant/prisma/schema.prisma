@@ -1,0 +1,100 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum OutputType {
+  GENERAL_NOTES
+  SPEC_SECTION
+  SCHEDULE
+}
+
+enum UserRole {
+  ADMIN
+  MEMBER
+}
+
+/// Authorization record. `id` is the Clerk user id. A row exists only for
+/// people on the allowlist; everyone else is authenticated but not authorized.
+model AppUser {
+  id        String   @id
+  email     String   @unique
+  role      UserRole @default(MEMBER)
+  createdAt DateTime @default(now())
+
+  outputs     SavedOutput[]
+  generations Generation[]
+}
+
+/// Grounding library: a2o's past notes / specs / schedules used as style and
+/// format references. Seeded with PLACEHOLDER rows until a2o's real ones land.
+model Example {
+  id            String     @id @default(cuid())
+  type          OutputType
+  title         String
+  projectType   String     // residential | light_commercial | mixed_use
+  occupancy     String?    // e.g. R-3, B, M
+  jurisdiction  String?    // e.g. City of Key West, Monroe County
+  tags          String[]   @default([])
+  body          String
+  isPlaceholder Boolean    @default(true)
+  createdAt     DateTime   @default(now())
+  updatedAt     DateTime   @updatedAt
+
+  @@index([type])
+}
+
+/// Outputs the user chose to keep. Searchable; reusable as a starting point.
+model SavedOutput {
+  id           String     @id @default(cuid())
+  userId       String
+  type         OutputType
+  title        String
+  projectName  String
+  brief        String
+  params       Json
+  body         String
+  tags         String[]   @default([])
+  generationId String?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  user AppUser @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, type])
+  @@index([userId, updatedAt])
+}
+
+/// One row per model call: which model/tier ran, token usage, cache hits, latency.
+model Generation {
+  id               String     @id @default(cuid())
+  userId           String
+  type             OutputType
+  model            String
+  tier             String
+  exampleIds       String[]   @default([])
+  inputTokens      Int
+  outputTokens     Int
+  cacheReadTokens  Int        @default(0)
+  cacheWriteTokens Int        @default(0)
+  latencyMs        Int
+  stopReason       String?
+  createdAt        DateTime   @default(now())
+
+  user AppUser @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+}
+
+/// Sliding-window rate limiting that works across serverless instances.
+model RateLimitEvent {
+  id        String   @id @default(cuid())
+  key       String
+  createdAt DateTime @default(now())
+
+  @@index([key, createdAt])
+}
