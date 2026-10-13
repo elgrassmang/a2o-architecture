@@ -1,0 +1,27 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Node / Python (for helper tooling)
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.venv/
+
+# CAD working files / backups (keep deliverables deliberate)
+*.bak
+*.dwl
+*.dwl2
+*.sv$
+*.0001
+*.0002
+*.rvt.backup
+*_backup/
