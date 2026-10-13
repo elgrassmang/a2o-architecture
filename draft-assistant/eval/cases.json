@@ -1,0 +1,32 @@
+[
+  {
+    "id": "gn-01-elevated-sfr",
+    "type": "GENERAL_NOTES",
+    "brief": "General notes for a new elevated single-family residence on a pile foundation. Cover codes, site, structural coordination, exterior envelope, impact-rated openings, and finishes.",
+    "params": {
+      "projectName": "1205 Simonton Street Residence",
+      "scope": "New two-story elevated single-family residence with ground-level parking and storage",
+      "occupancy": "R-3",
+      "jurisdiction": "City of Key West",
+      "specifics": "AE flood zone; pile foundation; standing-seam metal roof; impact-rated windows and doors"
+    },
+    "expectSections": ["STRUCTURAL", "DOORS AND WINDOWS"],
+    "expectPhrases": ["Florida Building Code", "product approval", "flood"],
+    "forbidPhrases": ["lorem", "[insert"]
+  },
+  {
+    "id": "gn-02-historic-harc",
+    "type": "GENERAL_NOTES",
+    "brief": "General notes for the renovation of a contributing historic structure with a rear addition. Include HARC compliance, protection of historic fabric, salvage of Dade County pine, and existing-conditions verification.",
+    "params": {
+      "projectName": "614 Eaton Street Renovation",
+      "scope": "Renovation of existing one-story conch house with new rear addition and kitchen",
+      "occupancy": "R-3",
+      "jurisdiction": "City of Key West",
+      "specifics": "Historic district, HARC Certificate of Appropriateness approved; Dade County pine framing; lead paint likely"
+    },
+    "expectSections": ["DEMOLITION", "STRUCTURAL"],
+    "expectPhrases": ["HARC", "Dade County pine", "verify"],
+    "forbidPhrases": ["lorem", "[insert"]
+  }
+]
