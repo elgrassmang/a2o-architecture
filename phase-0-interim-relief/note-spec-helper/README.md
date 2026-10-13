@@ -1,9 +1,10 @@
 # AI note / spec / schedule helper (Phase 0)
 
-Drafts general notes, spec sections, and schedules as text the a2o team drops into
-their sheets. Works alongside AutoCAD LT today and carries into Revit.
+Built as the **a2o Draft Assistant** web app in [`/draft-assistant`](../../draft-assistant/).
+See its README for setup, how grounding works, and how to load a2o's real examples;
+see its HANDOFF.md for what is done and what still needs a2o.
 
-Design constraints:
-- Output is plain text / structured tables the team pastes in; no LT automation.
+Design constraints (from the proposal):
+- Output is plain text the team pastes into their sheets; nothing automates inside AutoCAD LT.
 - Grounded in a2o's own standards and past projects (`client-inputs/`), not generic boilerplate.
 - Everything it produces is a draft for the architect's review and stamp.

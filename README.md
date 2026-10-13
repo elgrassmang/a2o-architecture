@@ -8,6 +8,10 @@ transition: standards, the AI note/spec/schedule helper, rollout coordination, a
 
 Source of truth for scope: `docs/proposals/2026-10-13_Revit_Transition_Drafting_Pilot_Proposal.pdf`.
 
+**Phase 0 deliverable in progress:** the [a2o Draft Assistant](draft-assistant/) web app
+(General Notes, Spec Sections, Schedules grounded on a2o's examples). Setup and status in
+`draft-assistant/README.md` and `draft-assistant/HANDOFF.md`.
+
 ## Phases
 
 | Phase | Folder | What it covers | Status |
@@ -23,6 +27,7 @@ licensed architect. Autodesk subscriptions are contracted and paid by a2o direct
 ## Layout
 
 ```
+draft-assistant/               a2o Draft Assistant web app (Next.js + Postgres + Clerk + Anthropic)
 client-inputs/                 a2o's current drafting standards + 2-3 typical past projects (needed to start)
 docs/proposals/                Proposals and SOWs as sent
 phase-0-interim-relief/

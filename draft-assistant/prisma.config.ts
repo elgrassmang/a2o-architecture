@@ -12,6 +12,8 @@ export default defineConfig({
     seed: "tsx prisma/seed.ts",
   },
   datasource: {
-    url: process.env["DATABASE_URL"],
+    // The CLI (migrations) prefers a direct, non-pooled connection on Supabase/Neon.
+    // The app itself always connects through DATABASE_URL (see src/lib/db.ts).
+    url: process.env["DIRECT_URL"] || process.env["DATABASE_URL"],
   },
 });
