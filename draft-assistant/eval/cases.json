@@ -10,9 +10,19 @@
       "jurisdiction": "City of Key West",
       "specifics": "AE flood zone; pile foundation; standing-seam metal roof; impact-rated windows and doors"
     },
-    "expectSections": ["STRUCTURAL", "DOORS AND WINDOWS"],
-    "expectPhrases": ["Florida Building Code", "product approval", "flood"],
-    "forbidPhrases": ["lorem", "[insert"]
+    "expectSections": [
+      "STRUCTURAL",
+      "DOORS AND WINDOWS"
+    ],
+    "expectPhrases": [
+      "Florida Building Code",
+      "product approval",
+      "flood"
+    ],
+    "forbidPhrases": [
+      "lorem",
+      "[insert"
+    ]
   },
   {
     "id": "gn-02-historic-harc",
@@ -25,8 +35,115 @@
       "jurisdiction": "City of Key West",
       "specifics": "Historic district, HARC Certificate of Appropriateness approved; Dade County pine framing; lead paint likely"
     },
-    "expectSections": ["DEMOLITION", "STRUCTURAL"],
-    "expectPhrases": ["HARC", "Dade County pine", "verify"],
-    "forbidPhrases": ["lorem", "[insert"]
+    "expectSections": [
+      "DEMOLITION",
+      "STRUCTURAL"
+    ],
+    "expectPhrases": [
+      "HARC",
+      "Dade County pine",
+      "verify"
+    ],
+    "forbidPhrases": [
+      "lorem",
+      "[insert"
+    ]
+  },
+  {
+    "id": "spec-01-metal-roof",
+    "type": "SPEC_SECTION",
+    "brief": "Specification section for standing-seam metal roof panels on a new elevated residence. Coastal exposure, high design pressures, Florida Product Approval required.",
+    "params": {
+      "projectName": "1205 Simonton Street Residence",
+      "scope": "New two-story elevated single-family residence",
+      "occupancy": "R-3",
+      "jurisdiction": "City of Key West",
+      "specifics": "Aluminum panels; fluoropolymer finish; stainless fasteners"
+    },
+    "expectSections": [
+      "1.01 SUMMARY",
+      "2.01",
+      "3.01"
+    ],
+    "expectPhrases": [
+      "Product Approval",
+      "END OF SECTION"
+    ],
+    "forbidPhrases": [
+      "lorem",
+      "[insert"
+    ]
+  },
+  {
+    "id": "spec-02-impact-windows",
+    "type": "SPEC_SECTION",
+    "brief": "Specification section for impact-resistant aluminum windows with laminated insulating glass for a rear addition.",
+    "params": {
+      "projectName": "614 Eaton Street Renovation",
+      "scope": "Rear addition to historic residence",
+      "occupancy": "R-3",
+      "jurisdiction": "City of Key West",
+      "specifics": "Match HARC-approved profiles; simulated divided lites"
+    },
+    "expectSections": [
+      "1.03 SUBMITTALS",
+      "3.02 INSTALLATION"
+    ],
+    "expectPhrases": [
+      "impact",
+      "verify"
+    ],
+    "forbidPhrases": [
+      "lorem",
+      "[insert"
+    ]
+  },
+  {
+    "id": "sched-01-door",
+    "type": "SCHEDULE",
+    "brief": "Door schedule for a new elevated residence: front entry, rear French doors, garage-to-stair door, three bedroom doors, one pocket door at the primary bath, a laundry bi-fold, and a ground-level storage door below BFE.",
+    "params": {
+      "projectName": "1205 Simonton Street Residence",
+      "scope": "New two-story elevated single-family residence",
+      "occupancy": "R-3",
+      "jurisdiction": "City of Key West",
+      "specifics": "Exterior doors impact-rated; storage below BFE uses flood-resistant materials"
+    },
+    "expectSections": [
+      "DOOR SCHEDULE"
+    ],
+    "expectPhrases": [
+      "D01",
+      "VERIFY",
+      "Product Approval"
+    ],
+    "forbidPhrases": [
+      "lorem",
+      "[insert"
+    ]
+  },
+  {
+    "id": "sched-02-finish",
+    "type": "SCHEDULE",
+    "brief": "Room finish schedule for a retail tenant improvement: sales floor, two fitting rooms, stock room, office, accessible toilet room, and janitor closet.",
+    "params": {
+      "projectName": "Duval Street Retail TI",
+      "scope": "Interior tenant improvement of existing retail bay",
+      "occupancy": "M",
+      "jurisdiction": "City of Key West",
+      "specifics": "Porcelain tile at sales floor; LVP in fitting rooms; sealed concrete in stock room"
+    },
+    "expectSections": [
+      "ROOM FINISH SCHEDULE"
+    ],
+    "expectPhrases": [
+      "101",
+      "slip",
+      "VERIFY"
+    ],
+    "forbidPhrases": [
+      "lorem",
+      "[insert"
+    ]
   }
 ]

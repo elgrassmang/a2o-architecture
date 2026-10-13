@@ -78,19 +78,20 @@ export const OUTPUT_TYPE_SPECS: Record<OutputType, OutputTypeSpec> = {
     shortLabel: "Schedule",
     description:
       "Door, window, finish, or fixture schedules as aligned text columns the team can drop into a sheet.",
-    requiredSections: ["SCHEDULE", "NOTES"],
+    requiredSections: ["NOTES"],
     formatRules: [
       "Output plain text only. No markdown table syntax, no bold.",
       "First line is the schedule title in ALL CAPS ending with the word SCHEDULE, e.g. DOOR SCHEDULE or WINDOW SCHEDULE.",
       "Second line is a column header row. Separate columns with a pipe and single spaces ( | ). Keep the same columns on every row.",
-      "Use mark numbers in the first column (D01, W01, F01). One item per line. Use '--' for a cell that does not apply; never leave a cell blank.",
+      "First column is the mark (D01, W01) or room number (101). One item per line. Use '--' for a cell that does not apply; never leave a cell blank.",
       "Include a NOTES heading after the rows with numbered notes 1., 2., 3. covering verification, submittals, and any product-approval or wind-load requirements stated in the parameters.",
       "Do not invent dimensions, ratings, or product approval numbers. Where a value is not given in the parameters, write 'VERIFY' in that cell.",
       "No preamble, no commentary, no closing line.",
     ],
     formatPatterns: [
+      { label: "ALL-CAPS title ending in SCHEDULE", pattern: /^[A-Z][A-Z /-]*SCHEDULE\s*$/m },
       { label: "pipe-delimited header", pattern: /^[^\n|]+\|[^\n|]+\|/m },
-      { label: "mark number row", pattern: /^[A-Z]{1,2}\d{2}\s*\|/m },
+      { label: "mark or room number row", pattern: /^(?:[A-Z]{1,2}\d{2,3}|\d{3})\s*\|/m },
       { label: "numbered note", pattern: /^\s*\d+\.\s+\S/m },
     ],
     baseComplexity: 0,
