@@ -115,8 +115,8 @@ to build.
 | 2 | Written automation assessment and quote | $2,500 | $1,500 on delivery |
 | | **Total** | **$7,000 to $8,000** | **$6,000** |
 
-Not included: Autodesk subscriptions (paid by a2o directly), core Revit setup and
-training, building a template or family library from scratch, any custom tool Phase 2
+Not included: Autodesk subscriptions and any hardware (paid by a2o directly), Revit
+training and modeling conventions, building a template or family library from scratch, any custom tool Phase 2
 recommends, and the optional care plan (from $300 per month, separate).
 
 Phase 1 begins whenever a2o is ready in Revit; nothing is billed for it until then.
