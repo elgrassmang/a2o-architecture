@@ -47,9 +47,11 @@ Line styles, text and dimension styles, title block content, sheet sets, view
 structure, standard notes, and schedule layouts. Plus coordination of the rollout:
 timeline, checkpoints, and keeping conventions consistent from LT through Revit.
 
-Core Revit setup and training stay on a2o's track (in-house, a Revit specialist, or
-Autodesk onboarding). Building a template or family library from scratch is outside
-this phase and quoted separately if wanted.
+Workstation readiness, licensing, installs, file storage and backup, and add-in setup
+are included in Phase 1 (see the IT setup page). Revit training and modeling practice
+stay on a2o's track (in-house, a Revit specialist, or Autodesk onboarding). Building a
+template or family library from scratch is outside this phase and quoted separately
+if wanted.
 
 ## Phase 2: automation assessment (after one real Revit project)
 
@@ -118,6 +120,52 @@ training, building a template or family library from scratch, any custom tool Ph
 recommends, and the optional care plan (from $300 per month, separate).
 
 Phase 1 begins whenever a2o is ready in Revit; nothing is billed for it until then.
+
+<!-- pagebreak -->
+
+# Revit IT setup: included in Phase 1
+
+Setting up Revit is two different jobs. The IT side is Keys2TheWeb's trade and is
+included in Phase 1 at no extra charge. The Revit-practice side (how a2o models,
+trains, and organizes projects) belongs with a Revit specialist or Autodesk onboarding.
+Keeping that line clear is what keeps the setup short and the result dependable.
+
+## Included: the IT side
+
+- **Workstation readiness.** Check each machine against Autodesk's published
+  requirements for the Revit version a2o buys. Revit is far heavier than AutoCAD LT:
+  64-bit Windows, a dedicated graphics card, 32 GB of RAM is comfortable, solid-state
+  storage. A machine that runs LT well may not run Revit well. Finding that out before
+  go-live is the single most valuable item on this page.
+- **Licensing and accounts.** Autodesk account, named-user licenses per seat, one admin
+  login that is a2o's rather than any one drafter's, installs and updates.
+- **Where project files live.** Revit files are large and single-user unless
+  worksharing is configured. A shared location (local server or Autodesk's cloud), a
+  folder structure that matches the standards document, and backups that run and are
+  tested.
+- **Add-ins on every seat.** NonicaTab (free) and pyRevit (free), with the Claude
+  connection confirmed on one machine before rollout.
+- **A rollback plan.** AutoCAD LT stays installed and licensed until the first Revit
+  project is delivered.
+
+Typical effort for a small office: one to two days, much of it waiting on installers.
+
+## Not included: the Revit-practice side
+
+- Training the drafters to model in Revit.
+- Deciding modeling conventions: wall types, level and grid strategy, view organization,
+  worksharing habits.
+- Building a project template or family library from scratch.
+
+These are a specialist's work. Doing them while learning Revit would cost a2o more
+than hiring someone who already knows it, and the first result would be redone.
+
+## Two questions that size this
+
+1. How many Revit seats?
+2. What are the current workstations (age, RAM, graphics card)?
+
+The answers decide whether the IT setup is an afternoon or includes a hardware purchase.
 
 ## What Keys2TheWeb needs to begin
 
